@@ -1,0 +1,20 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "weather td for universty",
+  "main": "index.js",
+  "dependencies": {
+    "html-minifier": "^4.0.0",
+    "i": "^0.3.6",
+    "jest": "^26.4.2",
+    "npm": "^6.14.8",
+    "uglify-js": "^3.11.0",
+    "url-join": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
