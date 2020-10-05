@@ -2,18 +2,23 @@
   "name": "weather",
   "version": "1.0.0",
   "description": "weather td for universty",
+  "type": "module",
   "main": "index.js",
   "dependencies": {
     "html-minifier": "^4.0.0",
-    "i": "^0.3.6",
     "jest": "^26.4.2",
+    "luxon": "^1.25.0",
+    "moment": "^2.29.0",
     "npm": "^6.14.8",
     "uglify-js": "^3.11.0",
     "url-join": "^4.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "simple-autoreload-server": "^0.2.7",
+    "nodemon": "^2.0.4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "autoreload-server"
   },
   "author": "",
   "license": "ISC"

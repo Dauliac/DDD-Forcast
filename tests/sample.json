@@ -14,8 +14,8 @@
         "elevation": "221.0"
     },
     "current_condition": {
-        "date": "02.10.2020",
-        "hour": "09:00",
+        "#date": "02.10.2020",
+        "#hour": "09:00",
         "tmp": 14,
         "wnd_spd": 24,
         "wnd_gust": 45,

@@ -1,53 +1,22 @@
-import cityApi from './CityApi.js'
-
 export class CityApiParser {
     constructor() {
-        const cityApiUrl = "https://www.prevision-meteo.ch/services/json/list-cities"
-        const cityApiUrl = cityApiUrl
-        const cities = []
-        const selectedCity = ApiCity(null,null,null, null)
+        this.url = "https://geo.api.gouv.fr/communes?nom="
+        this.cities = []
     }
 
-    isCitySelected(){
-        if(selectedCity.name !== null
-           && selectedCity.npa !== null
-           && selectedCity.country !== null
-           && selectedCity.url !== null
-        ) {
-            return true
-        }
-        return false
-    }
-
-    updateCitiesList() {
-        const response = await fetch(url);
+    async updateCitiesList() {
+        const response = await fetch(this.url)
         if (response.ok) {
-            const jsonCities = await response.json()
-            this.cities =  Object.values(jsonCities)
+            this.cities = await response.json()
+            console.log(this.cities)
             return true
         } else {
             return false
         }
     }
 
-    getCitiesNames() {
-        const cities = []
-        for (apicity in cities) {
-            cities.push(apicity.name)
-        }
-        return cities
-    }
-
-    getCitiesPostalCodes() {
-        const postalCode = []
-        for (apicity in cities) {
-            cities.push(apicity.npa)
-        }
-        return postalCode
-    }
-
     getCityByPostalCode(postalCode) {
-        for (apiCity in citiesnew Weather()) {
+        for (apiCity in cities) {
             if (apiCity.npa === postalCode) {
                 return apiCity
             }
@@ -56,7 +25,7 @@ export class CityApiParser {
     }
 
     getCityByName(name) {
-        for (apiCity in citiesnew Weather()) {
+        for (apiCity in cities) {
             if (apiCity.name === name) {
                 return apiCity
             }

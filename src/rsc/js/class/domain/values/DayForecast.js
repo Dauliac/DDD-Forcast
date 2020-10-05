@@ -1,31 +1,28 @@
-class DayForecast {
+import {Conditions} from './Conditions.js'
+
+export class DayForecast extends Conditions {
     constructor(
-        hour,
+        id,
         date,
-        day,
         condition,
-        tmin,
-        tmax,
-        isSnow,
+        temperatureMinimal,
+        temperatureMaximal,
         icon,
         iconBig,
-        hourforecasts
-
+        perHourForecasts
     ) {
-        this.hour = hour
-        this.date = date
-        this.day = day
-        this.condition = condition
-        this.tmin = tmin
-        this.tmax = tmax
-        this.isSnow = isSnow
-        this.icon = icon
-        this.iconBig = iconBig
-        this.hourForecasts = hourforecasts
-    }
-    static Factory() {
+        super(id, date, condition, icon, iconBig)
+        this._temperatureMinimal = temperatureMinimal
+        this._temperatureMaximal = temperatureMaximal
+        this._perHourForecasts = perHourForecasts
 
+        // Freeze it because this is a value object
+        // That's protect underscored properties
+        // Problem: modification of underscored
+        // don't raise error
+        Object.freeze(this)
     }
+    get temperatureMinimal() {return this._temperatureMinimal}
+    get temperatureMaximal() {return this._temperatureMaximal}
+    get perHourForecasts() {return this._perHourForecasts}
 }
-
-
