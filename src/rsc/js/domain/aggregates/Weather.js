@@ -94,25 +94,27 @@ export class Weather {
         }
     }
 
-    async addForecast(cityName) {
+    addForecast() {
+        return async (cityName) => {
+            const weatherSvc = new WeatherApiParser(null, cityName)
 
-        const weatherSvc = new WeatherApiParser(null, 'bordeaux')
+            // Json content from the api
+            // const forecast = Forecast.Factory(weatherSvc.cityApi, forecastApi)
+            const forecastApi = await weatherSvc.getApiContent()
 
-        // Json content from the api
-        // const forecast = Forecast.Factory(weatherSvc.cityApi, forecastApi)
-        const forecastApi = await weatherSvc.getApiContent()
+            const forecastId = this._getNewForecastId()
 
-        const forecastId = this._getNewForecastId()
+            const forecast = Forecast.Factory(forecastId, forecastApi)
 
-        const forecast = Forecast.Factory(forecastId, forecastApi)
+            if(this._isForecastsFull()) {
+                this._forecasts.shift()
+            }
 
-        if(this._isForecastsFull()) {
-            this._forecasts.shift()
+            this._forecasts.push(forecast)
+            console.log(forecast)
+
+            return true
         }
-
-        this._forecasts.push(forecast)
-
-        return true
     }
 
     getforecastById(id) {
