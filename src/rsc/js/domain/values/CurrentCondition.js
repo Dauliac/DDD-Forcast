@@ -17,6 +17,7 @@ export class CurrentCondition extends Conditions {
         super(id, date, condition, icon, iconBig)
         this._temperature = temperature
         this._windSpeed = windSpeed
+        this._windDirection = windDirection
         this._presure = presure
         this._humidity = humidity
 
@@ -29,9 +30,7 @@ export class CurrentCondition extends Conditions {
 
     get temperature() {return this._temperature}
     get windSpeed() {return this._windSpeed}
+    get windDirection() {return this._windDirection}
     get presure() {return this._presure}
     get humidity() {return this._humidity}
-
 }
-
-

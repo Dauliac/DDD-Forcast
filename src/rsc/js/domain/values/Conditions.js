@@ -14,7 +14,7 @@ export class Conditions {
     }
 
     get id() {return this._id}
-    get date() {return this._date}
+    get date() {return this._date.toDateString()}
     get condition() {return this._condition}
     get icon() {return this._icon}
     get iconBig() {return this._iconBig}

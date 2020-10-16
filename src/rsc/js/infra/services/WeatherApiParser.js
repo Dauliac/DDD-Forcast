@@ -1,25 +1,27 @@
+import {ApiCity} from './ApiCity.js'
+
 export class WeatherApiParser {
-    constructor(cityApi=null, cityName=null) {
-        this.url
+    constructor() {
         this.baseApiUrl = "https://prevision-meteo.ch/services/json/"
-        if(!cityApi && cityName) {
-            this.url = this.baseApiUrl + cityName
-        } else {
-            this.url = this.baseApiUrl + cityApi.url
-        }
     }
 
-    async getApiContent() {
-        console.log(this.url)
-        const response = await fetch(this.url)
-        if (response.ok) {
-            const forecast = await response.json()
+    getWeather(callback) {
+        return async (apiCity) => {
 
-            // Remove unused object from forecastApi object
-            delete forecast.forecast_info
-            return forecast
-        } else {
-            return false
+            const url = this.baseApiUrl + apiCity.city
+            console.log(url)
+
+            const response = await fetch(url)
+            if (response.ok) {
+                const forecast = await response.json()
+
+                // Remove unused object from forecastApi object
+                delete forecast.forecast_info
+                console.log(forecast)
+                return callback(forecast)
+            } else {
+                return false
+            }
         }
     }
 }

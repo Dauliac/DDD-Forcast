@@ -1,0 +1,26 @@
+{
+    "place_id": 25636548,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 2486969917,
+    "lat": "44.8391815",
+    "lon": "-0.5814393",
+    "display_name": "36, Rue de La Boétie, Bordeaux Centre, Bordeaux, New Aquitaine, Metropolitan France, 33000, France",
+    "address": {
+        "house_number": "36",
+        "road": "Rue de La Boétie",
+        "suburb": "Bordeaux Centre",
+        "city": "Bordeaux",
+        "municipality": "Bordeaux",
+        "state": "New Aquitaine",
+        "country": "France",
+        "postcode": "33000",
+        "country_code": "fr"
+    },
+    "boundingbox": [
+        "44.8391315",
+        "44.8392315",
+        "-0.5814893",
+        "-0.5813893"
+    ]
+}

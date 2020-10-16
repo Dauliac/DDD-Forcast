@@ -15,3 +15,19 @@ export const accentsTidy = dirtyString => {
         .replace(new RegExp("\\W", 'g'),"")
     return tidyString
 }
+
+export const fromCelciusToFahrenheit = value => {
+    return value*(5/9)
+}
+
+export const updateValueByClass = (classSelector, value) => {
+    document.querySelector(classSelector).innerHTML = value
+}
+
+export const updateTitleByClass = (classSelector, value) => {
+    document.querySelector(classSelector).title = value
+}
+
+export const updateSrcTagByClass = (classSelector, value) => {
+    document.querySelector(classSelector).src = value
+}

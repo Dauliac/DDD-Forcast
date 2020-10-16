@@ -1,0 +1,57 @@
+{
+    "type": "FeatureCollection",
+    "query": [
+        2.35183,
+        48.85658
+    ],
+    "features": [
+        {
+            "id": "postcode.11392507906176320",
+            "type": "Feature",
+            "place_type": [
+                "postcode"
+            ],
+            "relevance": 1,
+            "properties": {},
+            "text": "75004",
+            "place_name": "75004, Paris, France",
+            "bbox": [
+                2.344758,
+                48.845944,
+                2.369166,
+                48.861963
+            ],
+            "center": [
+                2.35,
+                48.86
+            ],
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.35,
+                    48.86
+                ]
+            },
+            "context": [
+                {
+                    "id": "locality.11392507907718660",
+                    "wikidata": "Q230127",
+                    "text": "4th arrondissement of Paris"
+                },
+                {
+                    "id": "place.14749210607497330",
+                    "wikidata": "Q90",
+                    "short_code": "FR-75",
+                    "text": "Paris"
+                },
+                {
+                    "id": "country.19008108158641660",
+                    "wikidata": "Q142",
+                    "short_code": "fr",
+                    "text": "France"
+                }
+            ]
+        }
+    ],
+    "attribution": "NOTICE: © 2020 Mapbox and its suppliers. All rights reserved. Use of this data is subject to the Mapbox Terms of Service (https://www.mapbox.com/about/maps/). This response and the information it contains may not be retained. POI(s) provided by Foursquare."
+}

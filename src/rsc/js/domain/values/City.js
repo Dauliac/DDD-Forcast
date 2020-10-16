@@ -38,4 +38,7 @@ export class City {
     get elevation() {return this._elevation}
     get sunrise() {return this._sunrise}
     get sunset() {return this._sunset}
+    get fullName() {
+        return this._name + ' ' + this._country.toUpperCase()
+    }
 }

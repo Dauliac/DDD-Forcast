@@ -1,29 +1,33 @@
 // import Fuse from 'fuse.js'
 import {accentsTidy} from './preprocessors.js'
-import {Weather} from '../domain/aggregates/Weather.js'
+import {ForecastComponent} from './forecastComponent.js'
+import {Forecasts} from '../domain/aggregates/Forecasts.js'
 
-const searchHandler = (formEvent) => {
-        formEvent.preventDefault()
-
-        return input => {
-            let cityProcessed
-            if(Number.isInteger(Number(input))) {
-                //TODO use CITY service to find city
-            } else {
-                cityProcessed = accentsTidy(input.value)
-            }
-            input.value=''
-
-            return (callback) => {
-                callback(cityProcessed).then(() => {
-                    return true
-                })
-            }
-        }
+const updateCity = input => {
+    let cityProcessed
+    if(Number.isInteger(Number(input))) {
+        //TODO use CITY service to find city
+    } else {
+        cityProcessed = accentsTidy(input)
     }
 
-const typeHandler = inputEvent => {
+    return (callback) => {
+        callback(cityProcessed).then((forecast) => {
+            console.log()
+            const forecastComponent = new ForecastComponent(forecast)
+            forecastComponent.update()
+            return true
+        })
+    }
+}
 
+const searchHandler = (formEvent) => {
+    formEvent.preventDefault()
+
+    return input => {
+        updateCity(input.value)
+        input.value=''
+    }
 }
 
 export class BrowserCity {
@@ -37,7 +41,9 @@ export class BrowserCity {
         }
 
         this.searchHandler = searchHandler
+        this.updateCity = updateCity
     }
+
     async addSearchListeners(callback) {
         const form = await document.querySelector(this._formClass)
         const input = await document.querySelector(this._formClass + ' input')
@@ -49,3 +55,4 @@ export class BrowserCity {
         )
     }
 }
+

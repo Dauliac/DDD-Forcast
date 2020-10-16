@@ -1,0 +1,190 @@
+{
+    "place_id": 235377619,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 105270,
+    "boundingbox": [
+        "44.8107826",
+        "44.9161806",
+        "-0.6386987",
+        "-0.5336838"
+    ],
+    "lat": "44.841225",
+    "lon": "-0.5800364",
+    "display_name": "Bordeaux, New Aquitaine, Metropolitan France, France",
+    "class": "boundary",
+    "type": "administrative",
+    "importance": 0.7740050666982947,
+    "icon": "https://nominatim.openstreetmap.org/images/mapicons/poi_boundary_administrative.p.20.png"
+},
+{
+    "place_id": 235567940,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 1667452,
+    "boundingbox": [
+        "44.5463125",
+        "45.0413552",
+        "-0.9049215",
+        "-0.2415648"
+    ],
+    "lat": "44.79384015",
+    "lon": "-0.6063085906819762",
+    "display_name": "Bordeaux, New Aquitaine, Metropolitan France, France",
+    "class": "boundary",
+    "type": "administrative",
+    "importance": 0.4362245296868723,
+    "icon": "https://nominatim.openstreetmap.org/images/mapicons/poi_boundary_administrative.p.20.png"
+},
+{
+    "place_id": 4504415,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 490257894,
+    "boundingbox": [
+        "48.8525201",
+        "48.8925201",
+        "-0.9086371",
+        "-0.8686371"
+    ],
+    "lat": "48.8725201",
+    "lon": "-0.8886371",
+    "display_name": "Bordeaux, Coulonces, Vire Normandie, Vire, Calvados, Normandy, Metropolitan France, 14500, France",
+    "class": "place",
+    "type": "hamlet",
+    "importance": 0.375,
+    "icon": "https://nominatim.openstreetmap.org/images/mapicons/poi_place_village.p.20.png"
+},
+{
+    "place_id": 357086,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 150933209,
+    "boundingbox": [
+        "46.8732367",
+        "46.9132367",
+        "-123.1064914",
+        "-123.0664914"
+    ],
+    "lat": "46.8932367",
+    "lon": "-123.0864914",
+    "display_name": "Bordeaux, Thurston County, Washington, United States of America",
+    "class": "place",
+    "type": "hamlet",
+    "importance": 0.375,
+    "icon": "https://nominatim.openstreetmap.org/images/mapicons/poi_place_village.p.20.png"
+},
+{
+    "place_id": 504967,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 154155835,
+    "boundingbox": [
+        "33.9065115",
+        "33.9465115",
+        "-82.4406842",
+        "-82.4006842"
+    ],
+    "lat": "33.9265115",
+    "lon": "-82.4206842",
+    "display_name": "Bordeaux, McCormick County, South Carolina, United States of America",
+    "class": "place",
+    "type": "hamlet",
+    "importance": 0.375,
+    "icon": "https://nominatim.openstreetmap.org/images/mapicons/poi_place_village.p.20.png"
+},
+{
+    "place_id": 446964,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 153360173,
+    "boundingbox": [
+        "36.1739448",
+        "36.2139448",
+        "-86.8513884",
+        "-86.8113884"
+    ],
+    "lat": "36.1939448",
+    "lon": "-86.8313884",
+    "display_name": "Bordeaux, Nashville, Davidson County, Tennessee, 37218, United States of America",
+    "class": "place",
+    "type": "hamlet",
+    "importance": 0.35,
+    "icon": "https://nominatim.openstreetmap.org/images/mapicons/poi_place_village.p.20.png"
+},
+{
+    "place_id": 16777254,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 1571678506,
+    "boundingbox": [
+        "44.6046933",
+        "44.6047933",
+        "1.0757557",
+        "1.0758557"
+    ],
+    "lat": "44.6047433",
+    "lon": "1.0758057",
+    "display_name": "Bordeaux, Loubejac, Sarlat-la-Canéda, Dordogne, New Aquitaine, Metropolitan France, 24550, France",
+    "class": "place",
+    "type": "isolated_dwelling",
+    "importance": 0.35
+},
+{
+    "place_id": 21913681,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 2195170956,
+    "boundingbox": [
+        "48.8805554",
+        "48.9205554",
+        "2.6528968",
+        "2.6928968"
+    ],
+    "lat": "48.9005554",
+    "lon": "2.6728968",
+    "display_name": "Bordeaux, Villevaudé, Meaux, Seine-et-Marne, Ile-de-France, Metropolitan France, 77410, France",
+    "class": "place",
+    "type": "hamlet",
+    "importance": 0.35,
+    "icon": "https://nominatim.openstreetmap.org/images/mapicons/poi_place_village.p.20.png"
+},
+{
+    "place_id": 104893386,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 84751620,
+    "boundingbox": [
+        "48.8979848",
+        "48.9052984",
+        "2.6683461",
+        "2.677141"
+    ],
+    "lat": "48.901658100000006",
+    "lon": "2.673195073980268",
+    "display_name": "Bordeaux, Villevaudé, Meaux, Seine-et-Marne, Ile-de-France, Metropolitan France, 77410, France",
+    "class": "place",
+    "type": "locality",
+    "importance": 0.35,
+    "icon": "https://nominatim.openstreetmap.org/images/mapicons/poi_place_village.p.20.png"
+},
+{
+    "place_id": 476271,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 158342092,
+    "boundingbox": [
+        "35.0082194",
+        "35.0482194",
+        "-78.9561383",
+        "-78.9161383"
+    ],
+    "lat": "35.0282194",
+    "lon": "-78.9361383",
+    "display_name": "Bordeaux, Fayetteville, Cumberland County, North Carolina, 28304, United States of America",
+    "class": "place",
+    "type": "hamlet",
+    "importance": 0.35,
+    "icon": "https://nominatim.openstreetmap.org/images/mapicons/poi_place_village.p.20.png"
+}
+]

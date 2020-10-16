@@ -1,12 +1,20 @@
-import {BrowserCity} from './search.js'
-import {Application} from '../application/application.js'
+import {CityComponent} from './components/City.js'
+import {CityController} from './controllers/City.js'
+import {CurrentConditionComponent} from './components/CurrentCondition.js'
+import {CurrentConditionController} from './controllers/CurrentCondition.js'
 
 export class Ui {
     constructor() {
-        this.application = new Application()
-        this.browserCity = new BrowserCity()
+        this._cityController = new CityController()
+    }
 
-        this.browserCity.addSearchListeners(this.application.weather.addForecast())
+    updateAll() {
+        return (dataForecast) => {
+            console.log('[UI] Update data')
+            console.log(dataForecast)
+            const forecast = dataForecast
+            this._cityController.updatecity(forecast.city)
+        }
     }
 
 }

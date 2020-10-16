@@ -3,7 +3,7 @@ import {DayForecast} from '../values/DayForecast.js'
 import {HourForecast} from '../values/HourForecast.js'
 import {CurrentCondition} from '../values/CurrentCondition.js'
 
-// Agegator of different type of forecast
+// Value object of different type of forecast
 export class Forecast {
     constructor(
         id,
@@ -54,9 +54,9 @@ export class Forecast {
 
         // There is only one current condition,
         // this id is always 0
-        const CurrentConditionId = 0
+        const currentConditionId = 0
         const currentCondition = new CurrentCondition(
-            CurrentConditionId,
+            currentConditionId,
             forecastApi.current_condition.tmp,
             forecastApi.current_condition.wnd_spd,
             forecastApi.current_condition.wnd_dir,
@@ -66,6 +66,7 @@ export class Forecast {
             forecastApi.current_condition.icon,
             forecastApi.current_condition.icon_big
         )
+        console.log('current condition: ' + JSON.stringify(currentCondition))
         // Remove used objects to loop on parent after
         delete forecastApi.current_condition
         let dayId = 0
@@ -97,7 +98,7 @@ export class Forecast {
                         isSnow,
                         hourForecastApi.icon
                     )
-                    perHourForecasts.push(HourForecast)
+                    perHourForecasts.push(hourForecast)
                     hourId++
                 }
 
@@ -119,7 +120,8 @@ export class Forecast {
         }
 
         //Return builded forecast object
-        const forecast = new Forecast(forecastId, city, CurrentCondition, weekForecast)
+        const forecast = new Forecast(forecastId, city, currentCondition, weekForecast)
+        console.log('forecast: ' + JSON.stringify(forecast))
         return forecast
     }
 }

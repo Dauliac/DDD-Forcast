@@ -1,0 +1,57 @@
+{
+    "type": "FeatureCollection",
+    "query": [
+        2.52694,
+        48.09889
+    ],
+    "features": [
+        {
+            "id": "postcode.10888627361190130",
+            "type": "Feature",
+            "place_type": [
+                "postcode"
+            ],
+            "relevance": 1,
+            "properties": {},
+            "text": "45340",
+            "place_name": "45340, Bordeaux-en-Gâtinais, Loiret, France",
+            "bbox": [
+                2.25353,
+                47.987998,
+                2.583532,
+                48.139364
+            ],
+            "center": [
+                2.39,
+                48.07
+            ],
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.39,
+                    48.07
+                ]
+            },
+            "context": [
+                {
+                    "id": "place.13362503721153090",
+                    "wikidata": "Q1167170",
+                    "text": "Bordeaux-en-Gâtinais"
+                },
+                {
+                    "id": "region.10112619258799870",
+                    "wikidata": "Q12574",
+                    "short_code": "FR-45",
+                    "text": "Loiret"
+                },
+                {
+                    "id": "country.19008108158641660",
+                    "wikidata": "Q142",
+                    "short_code": "fr",
+                    "text": "France"
+                }
+            ]
+        }
+    ],
+    "attribution": "NOTICE: © 2020 Mapbox and its suppliers. All rights reserved. Use of this data is subject to the Mapbox Terms of Service (https://www.mapbox.com/about/maps/). This response and the information it contains may not be retained. POI(s) provided by Foursquare."
+}
