@@ -10,7 +10,7 @@ export class CityController {
         this._tooltipQuery = '.' + this._tooltipClass
     }
 
-    updatecity(city) {
+    update(city) {
         const oldCityElement = document.querySelector(this._query)
         const newCityElement = new CityComponent(city, this._tooltipQuery, this._tooltipClass)
 

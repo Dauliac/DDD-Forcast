@@ -1,6 +1,11 @@
+@import url("sun.css");
 
 h1, h2, h3, h4, h5{
   display: inline;
+}
+
+body{
+  background: #33495f;
 }
 
 input {
@@ -53,4 +58,17 @@ h4 {
 }
 .mapboxgl-ctrl-geocoder {
   width: 10em;
+}
+
+.week-forecast-component {
+  max-width: 100%;
+}
+.date-card {
+  border-radius: 0.4em;
+  background-color: #627d99;
+  box-shadow: 0.2em 0.2em 0.4em #999;
+}
+
+.date-card:hover {
+  box-shadow: 0.3em 0.3em 0.4em #999;
 }

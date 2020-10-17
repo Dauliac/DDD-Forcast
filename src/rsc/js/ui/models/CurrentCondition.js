@@ -1,1 +1,1 @@
-export const currentConditionClass = 'city-component'
+export const currentConditionClass = 'current-condition-component'

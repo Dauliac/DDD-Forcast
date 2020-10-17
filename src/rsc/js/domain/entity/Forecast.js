@@ -3,18 +3,20 @@ import {DayForecast} from '../values/DayForecast.js'
 import {HourForecast} from '../values/HourForecast.js'
 import {CurrentCondition} from '../values/CurrentCondition.js'
 
+import {dateCorrector} from './FactoryUtils.js'
+
 // Value object of different type of forecast
 export class Forecast {
     constructor(
         id,
         city,
         currentCondition,
-        week
+        weekForecast
     ) {
         this._id = id
         this._city = city
         this._currentCondition = currentCondition
-        this._week = week
+        this._weekForecast = weekForecast
     }
 
     get id() {
@@ -29,8 +31,8 @@ export class Forecast {
         return this._currentCondition
     }
 
-    get week() {
-        return this._week
+    get weekForecast() {
+        return this._weekForecast
     }
 
     // cityApi and forecastApi
@@ -102,10 +104,11 @@ export class Forecast {
                     hourId++
                 }
 
+                const correctedDate = dateCorrector(dayForecastApi.date)
                 // Build day forecast
                 const forecastDay = new DayForecast(
                     dayId,
-                    dayForecastApi.date,
+                    correctedDate,
                     dayForecastApi.condition,
                     dayForecastApi.tmin,
                     dayForecastApi.tmax,
@@ -118,10 +121,9 @@ export class Forecast {
                 dayId++
             }
         }
-
+        console.log('week: ' + JSON.stringify(weekForecast))
         //Return builded forecast object
         const forecast = new Forecast(forecastId, city, currentCondition, weekForecast)
-        console.log('forecast: ' + JSON.stringify(forecast))
         return forecast
     }
 }
