@@ -31,19 +31,19 @@ export class WeekForecastComponent extends HTMLElement {
             const date = day.date.toLocaleDateString('fr-FR', dateOptions)
 
             html += `
-            <div class="date-card p-2 bd-highlight d-flex flex-column mb-4">
+            <div class="date-card p-3 bd-highlight d-flex flex-column mb-4">
                 <div>
                     ${date}
                 </div>
                 <div>
                     ${this._renderIcon(day.icon, day.condition)}
                 </div>
-                <div class="p-2 bd-highlight d-flex flex-row">
+                <div class="p-2 bd-highlight d-flex flex-column">
                     <div>
-                        Minimum ${day.temperatureMinimal}
+                        Température minimum: ${day.temperatureMinimal}
                     </div>
                     <div>
-                        Maximum: ${day.temperatureMaximal}
+                        Température Maximum: ${day.temperatureMaximal}
                     </div>
                 </div>
             </div>
